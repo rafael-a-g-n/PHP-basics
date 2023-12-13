@@ -9,8 +9,8 @@
 					<div class="ml-10 flex items-baseline space-x-4">
 						<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
 						<a href="/" class="<?= getUrl('/') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</a>
-						<a href="/about.php" class="<?= getUrl('/about.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
-						<a href="/contact.php" class="<?= getUrl('/contact.php') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+						<a href="/about" class="<?= getUrl('/about') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
+						<a href="/contact" class="<?= getUrl('/contact') ? 'bg-gray-900 text-white' : 'text-gray-300' ?> hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
 					</div>
 				</div>
 			</div>
