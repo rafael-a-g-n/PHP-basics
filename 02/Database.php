@@ -2,11 +2,13 @@
 class Database {
 
 	public $connection;
-	public function __construct()
+	public function __construct($config)
 	{
-		$dsn = "mysql:host=mysql-93a4f08-ragn-a06e.a.aivencloud.com;port=16579;dbname=phppractise;user=avnadmin;password=AVNS_QlSZgdut7W90ZkVGJG0;charset=utf8mb4";
+		$dsn = 'mysql:' . http_build_query($config, '', ';');
 
-		$this->connection = new PDO($dsn);
+		$this->connection = new PDO($dsn, $config['username'], $config['password'], [
+			PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+		]);
 	}
 	public function query($query)
 	{
